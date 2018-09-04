@@ -1,0 +1,196 @@
+/* Basic Attributes */
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+}
+.lead { font-size: 1.15rem; }
+.overflow-hidden { overflow: hidden; }
+.navbar {
+    position: absolute;
+    z-index: 20;
+}
+.navbar .navbar-brand {
+    color: white;
+}
+.navbar .navbar-brand:hover {
+    color: #1bdebc;
+}
+.splash {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.middle {
+    margin: auto;
+    vertical-align: middle;
+}
+.badge-box {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    left: 50vw;
+    bottom: 5vh;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+}
+.content-box {
+    text-align: center;
+    position: absolute;
+    /* height: 100%; */
+    margin: auto;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    z-index: 30;
+}
+.content-wrapper {
+    width: 75vw;
+    height: 100%;
+    margin: auto;
+    vertical-align: middle;
+}
+.content-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.content-cell {
+    display: table-cell;
+    width: 50%;
+    margin: auto;
+    vertical-align: middle;
+}
+.hr-bold {
+    margin-left: 0;
+    color: #000;
+    background-color: #000;
+    max-width: 70%;
+    min-width: 60%;
+    height: 4px;
+}
+.video-container {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    position: absolute;
+}
+.video-container video {
+    width: 100vw;
+    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    /*border-radius: 5px;*/
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+footer {
+    padding: 15px 0;
+    margin-bottom: 0;
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #0f0f0f;
+    z-index: 10;
+    border: 0;
+    font-size: .9rem !important;
+    letter-spacing: .1rem;
+    border-radius: 0;
+}
+footer p {
+    padding: 10px 0;
+    font-size: .9rem;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+}
+footer .fa {
+    font-weight: 300;
+    color: #6c757d !important;
+}
+.bg-img {
+    background: rgba(0,212,255,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,212,255,0) 100%);
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.60;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    z-index: 10;
+}
+.badge-btn {
+    margin: .2rem 0;
+}
+
+/* Image Background */
+.phone-white {
+    height: 600px;
+    background-image: url(../../resources/Pixel2-White.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 303px
+}
+.phone-black {
+    height: 600px;
+    background-image: url(../../resources/Pixel2-Black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 303px
+}
+.picai-recog {
+    background-image: url(../../resources/picai-recog.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px
+}
+.picai-filter {
+    background-image: url(../../resources/picai-filter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px
+}
+.picai-share {
+    background-image: url(../../resources/picai-share.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px
+}
+.picai-setting {
+    background-image: url(../../resources/picai-setting.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px
+}
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* Media Query */
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+@media (max-width: 768px) {
+  .text-md-responsive {
+      text-align: center;
+  }
+  .mt-md-3r {
+      margin: 2rem auto;
+  }
+}
